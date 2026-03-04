@@ -1,11 +1,4 @@
 document.write('<figure>');
-document.write('<p> Contact me : <em>yaboiburger123@gmail.com</em></p>');
-document.write('<a href="https://psychicdigit.neocities.org/">');
-document.write('<img src="Images/Buttons/webzone_resized.gif">');
 document.write('</a>');
-document.write('<img src="Images/Buttons/neocities_button.gif">');
-document.write('<img src="Images/Buttons/bonknow.gif">');
-document.write('<img src="Images/Buttons/eb-button.png">');
-document.write('<img src="Images/Buttons/camtime.png">');
-document.write('<img src="Images/Buttons/garf.gif">');
+document.write('<img src="Images/Buttons/under_construction.gif">');
 document.write('</figure>');
