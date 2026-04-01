@@ -1,30 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Site</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nobodyP's WebZONE!</title>
-    <link href="_mainstyle.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  
-  <body>
-    <!-- WHY ARE YOU LOOKING AT MY CODE YOU WEIRDO???? -->
-    <header>  
-      <h1> <marquee scrollamount="15"> nobodyP's <em>WebZONE!</em> </marquee> </h1>
-      <nav>      
-        <script type="text/javascript" src="js_ref/nav.js"></script>
-      </nav>
-    </header>
-    
-    <h1>The <em>WebZONE!</em></h1>
-    <img src="Images/under_construction.gif">
-    <p> This is a website.</p>
-  
-    <footer>    
-      <script type="text/javascript" src="js_ref/footer.js"></script>
-    </footer>
-    
-  </body>  
+    body {
+      font-family: 'Georgia', serif;
+      background: #FFFFF0;
+      color: #d4e8d0;
+      min-height: 100vh;
+    }
+
+    /* ── Top Bar ── */
+    nav {
+      background: #0f1a0f;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      height: 50px;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #5a9a5a;
+    }
+
+    nav a {
+      color: #8fbc8f;
+      text-decoration: none;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #c8e6c8; }
+    nav a.active { color: #c8e6c8; border-bottom: 2px solid #5a9a5a; padding-bottom: 3px; }
+
+    /* ── Greeting ── */
+    .greeting {
+      padding: 5rem 2rem 3rem;
+      max-width: 580px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .greeting h1 {
+      font-size: 2.2rem;
+      font-weight: normal;
+      margin-bottom: 0.75rem;
+      color: #c8e6c8;
+    }
+
+    .greeting p {
+      font-size: 1rem;
+      color: #7aab7a;
+      line-height: 1.8;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #2e4d2e;
+      margin: 3rem auto;
+    }
+
+    /* ── GIF Links Section ── */
+    .gif-section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+    }
+
+    .gif-section h2 {
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #4a7a4a;
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    .gif-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+
+    .gif-link {
+      display: block;
+      width: 88px;
+      height: 31px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 2px solid #5a9a5a;
+      transition: border-color 0.2s, transform 0.2s;
+      text-decoration: none;
+    }
+
+    .gif-link:hover {
+      border-color: #FAF9F6;
+      transform: translateY(-2px);
+    }
+
+    .gif-link img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gif-link .placeholder {
+      width: 100%;
+      height: 100%;
+      background: #162616;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FAF9F6;
+      font-family: 'Courier New', monospace;
+      font-size: 0.7rem;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="socials.html">Socials</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Greeting -->
+  <section class="greeting">
+    <h1>Hello.</h1>
+    <p>This website is under construction! yes it is vibecoded, but I am tech iliterate, and am making this durring a lecture so it will have to do for now.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- GIF Links Section -->
+  <section class="gif-section">
+    <h2>✦ pages ✦</h2>
+    <div class="gif-grid">
+
+      <!-- Each gif-link points to a page. Swap the src with your own GIFs. -->
+      <a href="https://psychicdigit.neocities.org/" class="gif-link">
+        <img src="gifs/webzone_resized.gif" alt="Socials" />
+      </a>
+
+    </div>
+  </section>
+
+</body>
 </html>
-
