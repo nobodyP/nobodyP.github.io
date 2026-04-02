@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nobodyP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #FFFFF0;
+      color: #d4e8d0;
+      min-height: 100vh;
+    }
+
+    /* ── Top Bar ── */
+    nav {
+      background: #20603c;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      height: 50px;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #5a9a5a;
+    }
+
+    nav a {
+      color: #8fbc8f;
+      text-decoration: none;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #c8e6c8; }
+    nav a.active { color: #c8e6c8; border-bottom: 2px solid #5a9a5a; padding-bottom: 3px; }
+
+    /* ── Greeting ── */
+    .greeting {
+      padding: 5rem 2rem 3rem;
+      max-width: 580px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .greeting h1 {
+      font-size: 2.2rem;
+      font-weight: normal;
+      margin-bottom: 0.75rem;
+      color: #134d13;
+    }
+
+    .greeting p {
+      font-size: 1rem;
+      color: #7aab7a;
+      line-height: 1.8;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #2e4d2e;
+      margin: 3rem auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="socials.html">Socials</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="tos.html">Terms of Service</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <!-- Greeting -->
+  <section class="greeting">
+    <h1>- Where to reach me. -</h1>
+    <p>For business related requests, you may reach me via my email</p>
+    <p>nobodypvocaloidreal@gmail.com</p>
+  </section>
+
+
+</body>
+</html>

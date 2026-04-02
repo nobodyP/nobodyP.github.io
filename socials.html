@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Socials</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #FFFFF0;
+      color: #d4e8d0;
+      min-height: 100vh;
+    }
+
+    /* ── Top Bar ── */
+    nav {
+      background: #20603c;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      height: 50px;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #5a9a5a;
+    }
+
+    nav a {
+      color: #8fbc8f;
+      text-decoration: none;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #c8e6c8; }
+    nav a.active { color: #c8e6c8; border-bottom: 2px solid #5a9a5a; padding-bottom: 3px; }
+
+    /* ── Content ── */
+    .content {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: #1e824c;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      color: #4a7a4a;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ── Social Links ── */
+    .socials {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.9rem 1.2rem;
+      background: #619161;
+      border: 1px solid #2e4d2e;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #d7ffd7;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      transition: border-color 0.2s, color 0.2s, transform 0.15s;
+    }
+
+    .social-link:hover {
+      border-color: #5a9a5a;
+      color: #c8e6c8;
+      transform: translateX(4px);
+    }
+
+    .social-link .icon {
+      font-size: 1.1rem;
+      width: 1.4rem;
+      text-align: center;
+    }
+
+    .social-link .handle {
+      color: #9ae09a;
+      font-size: 0.75rem;
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="socials.html" class="active">Socials</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="tos.html">Terms of Service</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="content">
+    <h1>find me online </h1>
+    <p class="subtitle">socials</p>
+
+    <div class="socials">
+
+      <a href="https://www.youtube.com/@nobodyPVocaloid" class="social-link" target="_blank">
+        <span class="icon">▶</span>
+        Original Music
+        <span class="handle">@nobodyPVocaloid</span>
+      </a>
+
+      <a href="https://www.youtube.com/@nobodyremix" class="social-link" target="_blank">
+        <span class="icon">▶</span>
+        Remixes and Covers
+        <span class="handle">@nobodyremix</span>
+      </a>
+
+      <a href="https://x.com/NobodyProduc3r" class="social-link" target="_blank">
+        <span class="icon">𝕏</span>
+        Twitter / X
+        <span class="handle">@NobodyProduc3r</span>
+      </a>
+
+      <a href="https://bsky.app/profile/nobodyp.bsky.social" class="social-link" target="_blank">
+        <span class="icon">☁</span>
+        Bluesky
+        <span class="handle">nobodyp.bsky.social</span>
+      </a>
+
+      <a href="https://www.tiktok.com/@nobody_59" class="social-link" target="_blank">
+        <span class="icon">♪</span>
+        TikTok
+        <span class="handle">@nobody_59</span>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
