@@ -131,7 +131,7 @@
 
     .card-info .tag {
       font-family: 'Courier New', monospace;
-      font-size: 0.4  rem;
+      font-size: 0.3  rem;
       color: #c8f7c5;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -237,7 +237,28 @@
         <h2>Kitsune Masato (狐音正人) DS</h2>
         <p>Around 10 hours and 30 of training data, 7 vocal modes, tension, gender, velocity, and auto pitch.</p>
         <p>Supports English, Japanese, Spanish, Korean, Chinese, Polish, and Tagalog.</p>
-        <audio controls src="audio/masato_test.wav" style="width: 100%; margin-top: 0.5rem; accent-color: #5a9a5a;"></audio>
+        <!-- audio-->
+         <div style="display: flex; gap: 0.5rem; align-items: center; margin-top: 0.5rem;">
+          <select onchange="this.parentElement.querySelector('audio').src = this.value; this.parentElement.querySelector('audio').load();"
+            style="background: #162616; color: #8fbc8f; border: 1px solid #3a6a3a; border-radius: 3px;
+                  font-family: 'Courier New', monospace; font-size: 1.5rem; padding: 0.3rem 0.5rem;
+                  cursor: pointer; flex-shrink: 0;">
+            <option value="audio/masato_test.wav">Kire</option>
+            <option value="audio/froggy_song_heat_Track1.wav">Heat</option>
+            <option value="audio/froggy_song_feral_Track1.wav">Feral</option>
+            <option value="audio/froggy_song_weak_Track1.wav">Weak</option>
+            <option value="audio/froggy_song_dark_Track1.wav">Dark</option>
+            <option value="audio/froggy_song_falsetto_Track1.wav">Falsetto</option>
+            <option value="audio/my_grandfathers_clock_eng.wav">English</option>
+            <option value="audio/Genkotsu_Yama_no_tanuki_san_Track 1.wav">Japanese</option>
+            <option value="audio/circle_game_pln.wav">Polish</option>
+            <option value="audio/little_swallow_Track1.wav">Mandarin</option>
+            <option value="audio/la_cucaracha_Track1.wav">Spanish</option>
+            <option value="audio/santoki_santoki.wav">Korean</option>
+            <option value="audio/bahay_kubo_Track1.wav">Tagalog</option>
+          </select>
+          <audio controls src="audio/masato_test.wav" style="flex: 1; min-width: 0; accent-color: #5a9a5a;"></audio>
+        </div>
       </div>
       <div class="card-buttons">
         <a href="https://www.mediafire.com/file/yh0pyy93rnusbjy/Kitsune_Masato_%2528%25E7%258B%2590%25E9%259F%25B3%25E6%25AD%25A3%25E4%25BA%25BA%2529_DS_v200.zip/file" class="btn primary">↓ Download</a>
